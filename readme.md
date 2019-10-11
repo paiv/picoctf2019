@@ -8,4 +8,4 @@ https://www.picoctf.com
 Results
 --
 
-![progress](progress.png)
+<img src="progress.png" width="555" alt="progress">
