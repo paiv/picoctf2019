@@ -9,3 +9,6 @@ Results
 --
 
 <img src="progress.png" width="555" alt="progress">
+
+
+<img src="scoreboard.png" width="492" alt="scoreboard">
