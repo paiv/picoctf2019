@@ -1,0 +1,8 @@
+/.venv
+/build
+/output.log
+/webdump
+
+__pycache__
+*.pyc
+.ipynb*

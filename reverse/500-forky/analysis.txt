@@ -1,0 +1,23 @@
+prot = 3
+
+#define PROT_READ       0x1             /* Page can be read.  */
+#define PROT_WRITE      0x2             /* Page can be written.  */
+#define PROT_EXEC       0x4             /* Page can be executed.  */
+
+flags = 0x21
+
+#define MAP_SHARED      0x01            /* Share changes.  */
+#define MAP_PRIVATE     0x02            /* Changes are private.  */
+#  define MAP_ANONYMOUS 0x20            /* Don't use a file.  */
+
+
+(gdb) set detach-on-fork off
+(gdb) info inferiors
+(gdb) inferior 16
+
+
+-r--r-----   1 hacksports forky_0    19 Sep 28 22:02 flag.txt
+-rwxr-sr-x   1 hacksports forky_0  7276 Sep 28 22:02 vuln
+-r--r-----   1 hacksports forky_0   498 Sep 28 22:02 vuln.c
+
+http://www.csl.mtu.edu/cs4411.ck/www/NOTES/process/fork/create.html

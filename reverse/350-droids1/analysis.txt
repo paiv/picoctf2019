@@ -1,0 +1,9 @@
+
+Android Studio:
+Profile or Debug APK
+
+Jadx online
+http://www.javadecompilers.com/
+
+
+password: opossum

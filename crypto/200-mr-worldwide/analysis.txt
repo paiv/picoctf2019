@@ -1,0 +1,18 @@
+picoCTF{
+2QH3+86 (35.028309, 135.753082) Nakanocho, Kamigyo Ward, Kyoto, Japan
+FP9R+Q9 (46.469391, 30.740883) Odesa, Odessa Oblast, 65000
+QR55+H9 (39.758949, -84.191605) Dayton, OH 45402, United States
+2X8H+3R (41.015137, 28.979530) İstanbul, Hoca Paşa, 34110 Fatih/İstanbul, Turkey
+F988+MM (24.466667, 54.366669) Hazza Bin Zayed the First St - Abu Dhabi - United Arab Emirates
+4MRV+87 (3.140853, 101.693207) Unnamed Road, 50480 Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+_
+2Q47+5C (9.005401, 38.763611) Unnamed Road, Addis Ababa, Ethiopia
+2Q6W+9H (-3.989038, -79.203560) Av Nueva Loja, Loja, Ecuador
+9VHW+5R (52.377956, 4.897070) Martelaarsgracht 5, 1012 TN Amsterdam, Netherlands
+34PR+7J (41.085651, -73.858467) Sleepy Hollow, NY 10591, United States
+QHRV+24 (57.790001, -152.407227) Kodiak, AK 99615, United States
+6W4F+8R (31.205753, 29.924526) Faculty Of Engineering, Al Azaritah WA Ash Shatebi, Qism Bab Sharqi, Alexandria Governorate, Egypt
+}
+
+
+picoCTF{KODIAK_ALASKA}

@@ -1,0 +1,26 @@
+
+$ java -jar apktool.jar decode -o two_out two.apk
+$ java -jar apktool.jar build two_out -o debug-unsigned.apk
+
+signing
+https://docs.microsoft.com/en-us/xamarin/android/deploy-test/signing/manually-signing-the-apk
+
+$ keytool -genkeypair -v -keystore my.keystore -alias mykey -keyalg RSA -keysize 2048 -validity 10000
+pass: android
+
+/Applications/android-sdk//build-tools/29.0.2/
+
+$ zipalign -f -v 4 debug-unsigned.apk debug.apk
+$ apksigner sign --ks my.keystore --ks-key-alias mykey debug.apk
+
+
+FlagstaffHill.smali
+
+patch 1: show password
+
+invoke-virtual {v7, v8}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+move-result-object v7
+return-object v7
+
+pass:
+dismass.ogg.weatherwax.aching.nitt.garlick

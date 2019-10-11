@@ -1,0 +1,17 @@
+-r--r-----     28 Sep 28 21:43 flag.txt
+-rw-rw-r--  14008 Sep 28 14:54 mystery
+-r--r-----  14008 Sep 28 14:54 no_auth_mistery
+-rw-rw-r--     57 Sep 28 21:43 output
+
+
+ZmFrZWF1dGhzaXRl.com
+fakeauthsite
+
+
+x00 x12
+x01 x13
+...
+x11 x23
+x12 x00
+...
+x23 x11

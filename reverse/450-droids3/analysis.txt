@@ -1,0 +1,24 @@
+
+$ java -jar apktool.jar decode -o three_out three.apk
+$ java -jar apktool.jar build three_out -o debug-unsigned.apk
+
+signing
+https://docs.microsoft.com/en-us/xamarin/android/deploy-test/signing/manually-signing-the-apk
+
+$ keytool -genkeypair -v -keystore my.keystore -alias mykey -keyalg RSA -keysize 2048 -validity 10000
+pass: android
+
+/Applications/android-sdk//build-tools/29.0.2/
+
+$ zipalign -f -v 4 debug-unsigned.apk debug.apk
+$ apksigner sign --ks my.keystore --ks-key-alias mykey debug.apk
+
+
+FlagstaffHill.smali
+
+patch 1:
+
+.method public static getFlag(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
+.line 19
+- invoke-static {p0}, Lcom/hellocmu/picoctf/FlagstaffHill;->nope(Ljava/lang/String;)Ljava/lang/String;
++ invoke-static {p0}, Lcom/hellocmu/picoctf/FlagstaffHill;->cilantro(Ljava/lang/String;)Ljava/lang/String;

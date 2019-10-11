@@ -1,0 +1,42 @@
+
+main:
+    init_randomness()
+        srand(time())
+        _rng = fopen("/dev/urandom")
+
+    generate_challenge()
+        _result = gen_expr(4)
+
+    ualarm(200)
+    scanf("%lld")
+
+
+get_random:
+    fread(buf, 8, 1, _rng)
+    return i64.from_bytes(buf)
+
+gen_expr(n):
+    if n == 0:
+        x = (i32)get_random()
+        printf("(%lld)", x)
+    else:
+        a = maybe_decrease(n)
+        b = maybe_decrease(n)
+        op = get_random_op()
+        putchar('(')
+        x = gen_expr(a)
+        printf(" %c ", op)
+        y = gen_expr(b)
+        putchar(')')
+        return do_op(x, y, op)
+
+
+maybe_decrease(n):
+    x = rand() # seeded
+    x = f(x)
+    return (n-1) if x > 0 else n
+
+get_random_op:
+    x = rand() # seeded
+    x = g(x)
+    return "+-*"[x]

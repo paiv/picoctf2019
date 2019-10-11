@@ -1,0 +1,16 @@
+
+2. Buy Flags
+1. Defintely not the flag Flag
+
+These knockoff Flags cost 900 each, enter desired quantity
+
+((1100 - 0x7fffffff) % (1 << 32) + 899) // 900
+2386095
+
+The final cost is: -2147481796
+Your current balance after transaction: 2147482896
+
+2. Buy Flags
+2. 1337 Flag
+1337 flags cost 100000 dollars, and we only have 1 in stock
+Enter 1 to buy one

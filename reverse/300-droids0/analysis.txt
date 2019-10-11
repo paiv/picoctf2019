@@ -1,0 +1,29 @@
+
+mkdir unpacked && cd unpacked
+unzip zero.apk
+
+Jadx online
+http://www.javadecompilers.com/
+
+
+resources/res/values/strings.xml:    <string name="abc_search_hint">Search…</string>
+resources/res/values/strings.xml:    <string name="hint">where else can output go? [PICO]</string>
+
+
+$ file lib/x86/libhellojni.so
+libhellojni.so: ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked
+
+$ rabin2 -I libhellojni.so
+bintype  elf
+bits     32
+canary   true
+class    ELF32
+compiler /Android (5220042 based on r346389c) clang version 8.0.7
+endian   little
+relocs   false
+relro    full
+
+FlagstaffHill.getFlag(input)
+  Log.i("PICO", paprika(input));
+
+sym.Java_com_hellocmu_picoctf_FlagstaffHill_paprika

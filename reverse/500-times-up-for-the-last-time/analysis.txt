@@ -1,0 +1,17 @@
+0x00000ca2:
+
+a op b
+
+ 6: +  add  (a + b)
+ 8: -  sub  (a - b)
+ 5: *  mul  (a * b)
+10: /  div  (a if b == 0 else a / b)
+ 0: %  mod  (a if b == 0 else a % b)
+57: ^  xor  (a ^ b)
+87: |   or  (a | b)
+ 1: &  and  (a & b)
+65: f       (a)
+83: x       (b)
+79: t       (a)
+77: r       (b)
+74: o       (b)

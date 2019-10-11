@@ -1,0 +1,5 @@
+
+https://www.guballa.de/vigenere-solver
+
+Cipher Variant: Classical Vigenere
+Language: English

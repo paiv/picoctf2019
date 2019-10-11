@@ -1,0 +1,18 @@
+
+This is a unique challenge. To try not to spoil it I'd reccomend trying to
+examine the packets in more detail. There's a unique way that data is being
+hidden
+
+Keep looking. See if you can piece together information from outside the
+streams. Timing kind of matters. Order does too.
+
+BTW, the "start" packet matters a lot.
+
+You only need wireshark. Maybe look into how packets work.
+
+What purpose does each packet serve in a standard network?
+
+It's not in the UDP, it's _of_ the UDP. Better Hint: ASCII
+
+the Flag is There in Plain sight, within a very specific stream based off of a
+respective port. good luck

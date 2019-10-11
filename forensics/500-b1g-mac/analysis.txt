@@ -1,0 +1,4 @@
+
+> So, fun thing with this one is that running the tool wont change the hashes.
+> If you reverse the binary you will find out why. Or perhaps look into why its
+> called b1g_mac.

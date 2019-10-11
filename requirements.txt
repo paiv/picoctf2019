@@ -1,0 +1,5 @@
+dpkt
+numpy
+Pillow
+pycrypto
+requests

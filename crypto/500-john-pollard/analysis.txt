@@ -1,0 +1,15 @@
+
+"certificate is using a broken key size"
+
+Public Key: 7 bytes : 11 A4 D4 52 12 B1 7F
+Exponent: 65537
+Key Size: 56 bits
+
+0x11A4D45212B17F
+4966306421059967
+http://www.factordb.com/index.php?query=4966306421059967
+67867967 * 73176001
+
+D:
+3627069957225473
+0xCE2CD08603C01

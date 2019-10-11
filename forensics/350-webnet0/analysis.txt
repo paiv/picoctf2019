@@ -1,0 +1,6 @@
+
+$ tshark -nr capture.pcap -2R 'ssl' -V
+$ tshark -nr capture.pcap -2R 'ssl.handshake.certificates' -T pdml
+
+$ openssl x509 -inform der -in cert.cert -text
+RSA Public-Key: (2048 bit)
